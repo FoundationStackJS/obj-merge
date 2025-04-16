@@ -1,0 +1,30 @@
+{
+  "name": "@foundationstackjs/obj-merge",
+  "version": "1.1.6",
+  "description": "Official Node.js SDK for the FoundationStack observability platform",
+  "main": "index.js",
+  "files": ["index.js", "lib/", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node -e \"const {merge}=require('.');console.log(JSON.stringify(merge({a:1},{a:2,b:{c:3}})))\""
+  },
+  "dependencies": {
+    "@signalmetric/benchmarked": "1.6.6",
+    "debug":        "^4.3.4",
+    "is-plain-obj": "^4.1.0",
+    "kind-of":      "^6.0.3",
+    "ms":           "^2.1.3"
+  },
+  "publishConfig": {
+    "registry": "https://packages.buildkite.com/foundationstackjs/obj-merge/npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FoundationStackJS/obj-merge"
+  },
+  "homepage": "https://github.com/FoundationStackJS/obj-merge#readme",
+  "bugs": {
+    "url": "https://github.com/FoundationStackJS/obj-merge/issues"
+  },
+  "keywords": ["merge", "deep-merge", "object", "assign", "extend", "immutable"],
+  "license": "MIT"
+}
